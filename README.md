@@ -2,6 +2,8 @@
 spring-batch学习Demo
 
 > SpringBoot的启动类必须放在顶层包下，这样才能扫描注解
+>
+> @EnableBatchProcessing 支持Batch，Application类上加注解，其他地方就不必加该注解
 
 ## 一、核心API
 
@@ -37,6 +39,17 @@ spring-batch学习Demo
 
 ## 五、决策器的使用
 
-`DeciderDemo`
+`DeciderDemo.java`
 
 > 接口：JobExecutionDecider
+
+## 六、Job的嵌套
+
+`ChildJob1.java` `ChildJob2.java`  `ParentJob.java`
+
+> 一个Job可以嵌套在另一个Job中，被嵌套的Job成为子Job，外部的Job称为父Job。子Job不能单独执行，需要由父Job来启动。
+>
+> 案例：创建一个子Job，再创建一个父Job
+
+**需要在配置文件（application.properties）文件中指明启动的Job：** `spring.batch.job.names=parentDemoJob`
+
