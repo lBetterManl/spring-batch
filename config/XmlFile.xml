@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+	<car>
+		<brand>宝马</brand>
+		<color>蓝</color>
+	</car>
+	<car>
+		<brand>奔驰</brand>
+		<color>黑</color>
+	</car>
+	<car>
+		<brand>马自达</brand>
+		<color>白</color>
+	</car>
+	<car>
+		<brand>保时捷</brand>
+		<color>红</color>
+	</car>
+	<car>
+		<brand>丰田</brand>
+		<color>白</color>
+	</car>
+	<car>
+		<brand>福特</brand>
+		<color>棕</color>
+	</car>
+</cars>

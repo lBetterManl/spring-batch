@@ -53,3 +53,27 @@ spring-batch学习Demo
 
 **需要在配置文件（application.properties）文件中指明启动的Job：** `spring.batch.job.names=parentDemoJob`
 
+## 七、读取数据库
+
+`com.hanson.itemreaderdb`
+
+`JdbcPagingItemReader` 分页读取数据
+
+> 读取Mysql数据库，输出到控制台
+
+## 八、读取普通文件
+
+`com.hanson.itemreaderfile`
+
+`FlatFileItemReader`
+
+> 从普通文件读取数据，输出到控制台
+
+## 九、读取XML文件
+
+`com.hanson.itemreaderxml`
+
+`StaxEventItemReader`
+
+> 从XML文件读取数据，输出到控制台
+
